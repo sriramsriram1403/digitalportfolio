@@ -1,0 +1,106 @@
+<html>
+<style>
+body{
+background-color:lavender;
+nav{
+background-color:black;
+color:white;
+}
+nav ul{
+list-style-type:none;
+}
+nav ul li {
+display:inline;
+margin:20px;
+}
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+footer{
+background-color:black;
+color:white;
+padding:.4em;
+font-family:cambria;
+}
+header{
+font-size:15px;
+color:black;
+width:100vw;
+height:25vh;
+padding:.5em;
+background-color:gray;
+}
+.section-content{
+padding: .3em;
+border:solid;
+border-color:blue;
+border-width:thin;
+border-radius:50px;
+background-color:white;
+}
+</style>
+<body>
+<header>
+<center><h1>My profile</h1></center>
+</header><br>
+<br>
+<nav>
+<ul>
+<li> <a href="#about">About</a></li>
+<li> <a href="#skills">Myskills</a></li>
+<li> <a href="#education">Education</a></li>
+<li> <a href="#project">My webpages</a></li>
+</ul>
+</nav>
+<section  id="about">
+<div class="section-content">
+<h1>About me</h1>
+<p> Hai! i'm sriram.upcoming BCA graduate<br></p>
+</div></section>
+<br>
+<section id="skills">
+<div class="section-content">
+<h1>skills</h1>
+<ul type="square">
+<li>c</li>
+<li>c++</li>
+<li>html</li>
+</ul>
+</div>
+</section><br>
+<section id="education">
+<div class="section-content">
+<h1>Education</h1>
+<p><u>BCA</u></p>
+<p> Student of Ambai Arts College</p>
+</div>
+</section>
+<br>
+<section  id="project">
+<div class="section-content">
+<h1>My Webpages</h1>
+<ul>
+<li><a href="sriclg.html">collegewebpage</a></li>
+</ul>
+</div>
+</section>
+<br>
+<footer>
+<b><p>&copy; 2023 by sriram</p></b>
+</footer>
+<script>document.querySelectorAll('a[href^="#"]').forEach(anchor =>{anchor.addEventListener('click',function(e){
+e.preventDefault();
+const targetID =this.getAttribute('href').substring(1);
+const targetElement=document.getElementById(targetId);
+if(targetElement){
+window.scrollTo({
+top:targetElement.offsetTop;
+behavior:'smooth';
+});
+}
+});
+});
+</script>
+</body>
+</html>
